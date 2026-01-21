@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farm Valley - Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <h1>Farm Valley</h1>
+      <p>Demo top-down en Canvas (sin frameworks)</p>
+    </header>
+
+    <section class="game-panel">
+      <canvas id="game" width="960" height="540" aria-label="Juego Farm Valley"></canvas>
+      <div class="hud">
+        <div class="hud-group">
+          <span>Posición:</span>
+          <strong id="pos">x: 0, y: 0</strong>
+        </div>
+        <div class="hud-group">
+          <span>Semillas:</span>
+          <strong id="seeds">5</strong>
+        </div>
+        <div class="hud-group">
+          <span>Estado:</span>
+          <strong id="status">Listo</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <h2>Controles</h2>
+      <ul>
+        <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> para moverte</li>
+        <li><kbd>Espacio</kbd> para plantar una semilla</li>
+        <li><kbd>R</kbd> para reiniciar progreso</li>
+      </ul>
+      <button id="reset" type="button">Reiniciar partida</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
